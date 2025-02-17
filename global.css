@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    animation: logoanim 10s linear infinite;
+}
+
+@keyframes logoanim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.Site-title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.site-title-container{
+    display: flex;
+    align-items: center;
+}
+.Header{
+    background-color: #36454F;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 89%;
+    z-index: 9999;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.137);
+}
+.Header nav {
+    display: flex;
+    gap: 15px; 
+}
+
+.Header a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px; 
+    transition: color 0.3s ease;
+}
+
+.Header a:hover {
+    text-decoration: underline;
+    color: lightgray; 
+}
+.Menu{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.Hire-me{
+   background-color: gray;
+   padding: 10px 20px;
+   color: black;
+   font-weight: bold;
+}
+.Hire-me:hover {
+    color: white; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.Hero-container{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    padding-top: 150px;
+}
+.hero-left{
+    width: 40%;
+}
+.hero-right{
+    width: 60%;
+}
+.small{
+    position: absolute;
+    left: 60;
+    top: 300px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+.big {
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.big:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hero-heading{
+    font-size: 100px;
+    margin: 0;
+}
+.sub-head{
+    padding: 20px 0;
+    opacity: 0.7;
+    font-size: 28px;
+}
+.Resume{
+    background-color: gray;
+    border: none;
+    color: black;
+}
+.Contact{
+    background-color: white;
+}
+.btn-con{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.Resume,.Contact{
+    padding: 20px 30px;
+    font-weight: bold;
+}
+.small-text{
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+.about{
+    background-image: url('123.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:870px;
+    position: relative;
+}
+
+.about-me{
+    position: relative;
+    height: 50px;
+    z-index: 1;
+    padding: 30px 0;
+}
+.about-me h1,
+.about-me p{
+    color: white;
+    text-align: center;
+    font-size: 52px;
+   
+
+}
+.about-me h2{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.822);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+@keyframes dioanim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.Dio {
+    position: relative;
+    height: auto;
+    width: 300px;
+    top: 60px;
+    display: block;
+    margin: 0 auto;
+    animation: dioanim 5s linear infinite; 
+}
+
+
+
